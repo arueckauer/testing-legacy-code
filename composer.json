@@ -1,0 +1,34 @@
+{
+    "name": "arueckauer/refactoring-legacy-code",
+    "type": "project",
+    "description": "Code examples taken from the talk \"Testing Legacy Code: Safe Refactoring\" by Katy Ereira (@maccath)",
+    "homepage": "https://github.com/arueckauer/refactoring-legacy-code",
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "Andi Rückauer",
+            "email": "arueckauer@gmail.com",
+            "homepage": "https://arueckauer.github.io/",
+            "role": "Project Lead"
+        }
+    ],
+    "require": {
+        "php": "^7.4 || ~8.0.0"
+    },
+    "require-dev": {},
+    "config": {
+        "sort-packages": true
+    },
+    "autoload": {
+        "psr-4": {
+            "RefactoringLegacyCode\\": "src/RefactoringLegacyCode"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "RefactoringLegacyCodeTest\\": "test/RefactoringLegacyCode"
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
