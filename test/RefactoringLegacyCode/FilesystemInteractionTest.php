@@ -21,8 +21,8 @@ class FilesystemInteractionTest extends TestCase
             ->at($vfs)
             ->setContent('1337');
 
-        $legacyCode = new FilesystemInteraction();
-        $legacyCode->countHit($hitCounterFile->url());
+        $filesystemInteraction = new FilesystemInteraction();
+        $filesystemInteraction->countHit($hitCounterFile->url());
 
         self::assertSame(
             '1338',
