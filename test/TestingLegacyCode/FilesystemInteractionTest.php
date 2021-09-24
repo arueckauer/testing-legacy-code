@@ -2,16 +2,16 @@
 
 declare(strict_types=1);
 
-namespace RefactoringLegacyCodeTest;
+namespace TestingLegacyCodeTest;
 
 use org\bovigo\vfs\vfsStream;
 use PHPUnit\Framework\TestCase;
-use RefactoringLegacyCode\FilesystemInteraction;
+use TestingLegacyCode\FilesystemInteraction;
 
 class FilesystemInteractionTest extends TestCase
 {
     /**
-     * @covers \RefactoringLegacyCode\FilesystemInteraction::countHit
+     * @covers \TestingLegacyCode\FilesystemInteraction::countHit
      */
     public function test_countHit(): void
     {

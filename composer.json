@@ -1,8 +1,8 @@
 {
-    "name": "arueckauer/refactoring-legacy-code",
+    "name": "arueckauer/testing-legacy-code",
     "type": "project",
     "description": "Code examples taken from the talk \"Testing Legacy Code: Safe Refactoring\" by Katy Ereira (@maccath)",
-    "homepage": "https://github.com/arueckauer/refactoring-legacy-code",
+    "homepage": "https://github.com/arueckauer/testing-legacy-code",
     "license": "BSD-3-Clause",
     "authors": [
         {
@@ -27,12 +27,12 @@
     },
     "autoload": {
         "psr-4": {
-            "RefactoringLegacyCode\\": "src/RefactoringLegacyCode"
+            "TestingLegacyCode\\": "src/TestingLegacyCode"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "RefactoringLegacyCodeTest\\": "test/RefactoringLegacyCode"
+            "TestingLegacyCodeTest\\": "test/TestingLegacyCode"
         }
     },
     "minimum-stability": "stable",

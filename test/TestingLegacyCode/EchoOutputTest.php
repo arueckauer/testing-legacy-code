@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace RefactoringLegacyCodeTest;
+namespace TestingLegacyCodeTest;
 
 use PHPUnit\Framework\TestCase;
-use RefactoringLegacyCode\EchoOutput;
+use TestingLegacyCode\EchoOutput;
 
 use function ob_get_clean;
 use function ob_start;
@@ -13,7 +13,7 @@ use function ob_start;
 class EchoOutputTest extends TestCase
 {
     /**
-     * @covers \RefactoringLegacyCode\EchoOutput::yodel
+     * @covers \TestingLegacyCode\EchoOutput::yodel
      */
     public function test_yodel_with_null_argument(): void
     {
@@ -30,7 +30,7 @@ class EchoOutputTest extends TestCase
     }
 
     /**
-     * @covers \RefactoringLegacyCode\EchoOutput::yodel
+     * @covers \TestingLegacyCode\EchoOutput::yodel
      */
     public function test_yodel_with_string_argument(): void
     {

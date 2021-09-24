@@ -2,22 +2,22 @@
 
 declare(strict_types=1);
 
-namespace RefactoringLegacyCodeTest;
+namespace TestingLegacyCodeTest;
 
 use Mockery;
 use PHPUnit\Framework\TestCase;
-use RefactoringLegacyCode\StaticMethodInvocation;
+use TestingLegacyCode\StaticMethodInvocation;
 
 class StaticMethodInvocationTest extends TestCase
 {
     /**
-     * @covers \RefactoringLegacyCode\StaticMethodInvocation::getPowerLevel
+     * @covers \TestingLegacyCode\StaticMethodInvocation::getPowerLevel
      * @runInSeparateProcess
      * @preserveGlobalState disabled
      */
     public function test_getPowerLevel_under_9000(): void
     {
-        Mockery::mock('alias:RefactoringLegacyCode\Goku')
+        Mockery::mock('alias:TestingLegacyCode\Goku')
             ->shouldReceive('powerLevel')
             ->andReturn(37);
 
@@ -28,13 +28,13 @@ class StaticMethodInvocationTest extends TestCase
     }
 
     /**
-     * @covers \RefactoringLegacyCode\StaticMethodInvocation::getPowerLevel
+     * @covers \TestingLegacyCode\StaticMethodInvocation::getPowerLevel
      * @runInSeparateProcess
      * @preserveGlobalState disabled
      */
     public function test_getPowerLevel_over_9000(): void
     {
-        Mockery::mock('alias:RefactoringLegacyCode\Goku')
+        Mockery::mock('alias:TestingLegacyCode\Goku')
             ->shouldReceive('powerLevel')
             ->andReturn(15000);
 
