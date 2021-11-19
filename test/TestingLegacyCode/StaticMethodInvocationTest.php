@@ -38,8 +38,6 @@ class StaticMethodInvocationTest extends TestCase
             ->shouldReceive('powerLevel')
             ->andReturn(15000);
 
-        $legacyCode = new StaticMethodInvocation();
-
         self::assertSame(
             'It is over 9000!',
             (new StaticMethodInvocation())->getPowerLevel()
